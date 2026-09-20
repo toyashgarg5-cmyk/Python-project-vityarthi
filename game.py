@@ -13,12 +13,17 @@ while True:
         elif computer_choice == "rock":
             print ("It's a TIE")
         else:
-            print ("Rock smashes Scissor, YOU WIN")        
-        x = input ("Would you like to play again?").title()
-        if x == "Yes":
-            continue   
-        else:
-            break 
+            print ("Rock smashes Scissor, YOU WIN")  
+        while True:      
+            x = input ("Would you like to play again?").title()
+            if x == "Yes":
+                break
+            elif x == "No":
+                break   
+            else:
+                print("Invalid response, try again") 
+        if x == "No":
+            break
 
 
     elif user_choice == "paper":
@@ -28,11 +33,17 @@ while True:
             print ("Paper covers Rock, YOU WIN")
         else:
             print ("Scissor cuts paper, YOU LOOSE") 
-        x = input ("Would you like to play again?").title()
-        if x == "Yes":
-            continue  
-        else:
-            break 
+        while True:
+            x = input ("Would you like to play again?").title()
+            if x == "Yes":
+                break  
+            elif (x== "No"):
+                break
+            else:
+                print("invalid response, try again") 
+                continue
+        if x =="No":
+            break
 
     elif user_choice == "scissor":
         if computer_choice == "paper":
@@ -41,10 +52,15 @@ while True:
             print ("It's a TIE")
         else:
             print ("Rock smashes scissor, YOU LOOSE")   
-        x = input ("Would you like to play again?").title()
-        if x == "Yes":
-            continue
-        else:
+        while True:
+            x = input ("Would you like to play again?").title()
+            if x == "Yes":
+                break
+            elif x == "No":
+                break
+            else:
+                print("Invalid response, try again")
+        if x == "No":
             break
 
     else:
