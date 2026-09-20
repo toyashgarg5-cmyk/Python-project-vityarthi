@@ -1,3 +1,8 @@
+# To-do tommorow
+# case of casino being bankrupt
+# making app visually apealing
+
+
 import random
 casino_cash = 10000000
 while True:
